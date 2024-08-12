@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="static/css/main.css">
+  </head>
+  <body>
+    
+    <div id="notepad">
+      
+      <div id="notepad-header">
+        <button class="btn minimize-btn">_</button>
+        <h1>Notepad</h1>
+      </div>
+      
+      <div id="notepad-menu"">
+        <button class="btn save-btn">Save</button>
+        <button class="btn download-btn">Download</button>
+      </div>
+
+      <textarea id="notepad-textarea" placeholder="Start typing here..." autofocus></textarea>
+      
+    </div>
+    
+    <div id="weather">
+      <div id="weather-info">
+        <h3 id="weather-location"></h3>
+        <p id="weather-temperature"></p>
+      </div>
+      <div id="weather-extra">
+        <img id="weather-icon">
+        <form id="weather-more" action="/weather.html" target="_blank">
+          <input type="submit" value="More Info">
+        </form>
+      </div>
+      
+    </div>
+
+    <div id="whiteboard">
+      
+      <canvas id="whiteboard-canvas"></canvas>
+      
+      <div id="whiteboard-settings">
+        <button class="btn minimize-btn minimize-whiteboard-btn">_</button>
+        
+        <label for="whiteboard-pen-size">Pen Size</label>
+        <input id="whiteboard-pen-size" type="number" value="2" min="1" max="99"></input>
+
+        <label for="whiteboard-colour-picker">Colour</label>
+        <input id="whiteboard-colour-picker" type="color" value="#000000"></input>
+
+        <label for="whiteboard-eraser">Eraser</label>
+        <input id="whiteboard-eraser" type="checkbox"></input>
+
+        <label for="whiteboard-eraser-size">Eraser Size</label>
+        <input id="whiteboard-eraser-size" type="number" value="10" min="1" max="99"></input>
+      </div>
+      
+    </div>
+    
+    
+    <script src="static/js/notepad.js"></script>
+    <script src="static/js/whiteboard.js"></script>
+    <script src="static/js/weather.js"></script>
+  </body>
+</html>

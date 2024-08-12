@@ -1,0 +1,178 @@
+h1 {
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+}
+body {
+  background-image: url('/static/images/bg_landscape.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.btn {
+  display: inline;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-width: 1px solid;
+  border-color: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.minimize-btn {
+  float: right;
+  padding: 5px 10px 5px 5px;
+  margin: -20px;
+  border: none;
+  border-radius: 0px 25px 0px 0px;
+  background: none;
+}
+.minimize-btn:hover {
+  background-color: #9e9a9a;
+}
+.save-btn:hover {
+  background-color:  #add8ff;
+}
+.download-btn:hover {
+  background-color:  #adffc8;
+}
+
+#notepad {
+  border-radius: 25px;
+  border: 2px solid;
+  width: 45vw;
+  height: 90vh;
+  margin: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  position: fixed;
+  left: 10px;
+  bottom: 30px;
+}
+#notepad-header {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: lightgray;
+  border-radius: 25px 25px 0px 0px;
+  padding: 20px 20px 10px 20px;
+}
+#notepad-menu {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: lightgray;
+  padding: 0px 20px 10px 20px;
+  border-bottom: 2px solid;
+}
+#notepad-textarea {
+  border: none;
+  resize: none;
+  width: auto;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+#notepad-textarea:focus {
+  border: 0;
+  outline: 0;
+}
+
+
+#whiteboard {
+  margin: 10px;
+  float: right;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  display: flex;
+}
+#whiteboard-canvas {
+  border-radius: 25px 0px 0px 25px;
+  border: 2px solid;
+  background-color: #ffffff;
+  display: inline;
+  flex-grow: 1;
+  width: auto;
+  height: auto;
+}
+#whiteboard-settings {
+  background-color: pink;
+  display: flex;
+  width: auto;
+  height: auto;
+  top: 10px;
+  right: 10px;
+  padding: 20px 5px 5px 5px;
+  border-radius: 0px 25px 25px 0px;
+  border: 2px solid;
+  flex-direction: column;
+}
+.minimize-whiteboard-btn {
+  /* padding-left: 0px; */
+  margin: -20px -20px 0px -5px;
+}
+#whiteboard-pen-size {
+  width: auto;
+  height: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+#whiteboard-colour-picker {
+  width: auto;
+  height: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+#whiteboard-eraser {
+  width: auto;
+  height: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+#whiteboard-eraser-size {
+  width: auto;
+  height: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+
+#weather {
+  border-radius: 25px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  background-color: rgba(255,255,255,0.5);
+  display: flex;
+  float: right;
+  position: fixed;
+  right: 10px;
+  padding: 15px;
+}
+#weather-info {
+  flex-direction: column;
+}
+#weather-location {
+  font-size: 20px;
+}
+#weather-temperature {
+  font-size: 16px;
+}
+#weather-extra {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+#weather-icon {
+  width: 100%;
+  height: 100%;
+}
+#weather-more {
+  font-size: 16px;
+}
